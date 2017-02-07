@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=8" />
+<meta property="qc:admins" content="214477071663636" /> <title>出错啦！-名鞋库</title> <meta name="keywords" content=""> <meta name="description" content="">   <link rel="icon" href="favicon.ico" type="image/x-icon" /> <link rel="bookmark" href="favicon.ico" type="image/x-icon" /> 
+<script>
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-6779927-2', 'auto');
+    ga('create', 'UA-55145319-1', 'auto', {'name': 'scnTracker'});  // New tracker.
+	/*
+    if(Cookie.get('S[SEND_GA]')){
+        ga('set', '&uid', Cookie.get('S[SEND_GA]'));
+        ga('scnTracker.set', '&uid', Cookie.get('S[SEND_GA]'));
+        //setCookie('S[SEND_GA]',0,1,"/");
+    } */
+    ga('require', 'linkid');
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview');
+    ga('send', 'pageview','/page-error404.html?page='+document.location.pathname+document.location.search+'&from='+document.referrer);
+    ga('scnTracker.send', 'pageview');
+
+</script>
+<script type="text/javascript" language="javascript">    
+var secs =15; //倒计时的秒数    
+var URL ;    
+function Load(url){    
+URL =url;    
+for(var i=secs;i>=0;i--)    
+{    
+window.setTimeout('doUpdate(' + i + ')', (secs-i) * 1000);    
+}    
+}    
+function doUpdate(num)    
+{    
+document.getElementById('time').innerHTML = ''+num+'' ;    
+if(num == 0) { window.location=URL; }    
+}    
+</script>
+<script language="javascript">    
+Load("http://www.s.cn"); //要跳转到的页面    
+</script>
+</head>
+<body>
+<div style="width:990px;margin:0 auto">
+<div style="background:url(http://images.s.cn/images/css/404_v12.png) no-repeat 160px 50%;padding:150px 0 0 440px;height:280px;">
+    <div style="font-family:'microsoft yahei';font-size:18px;font-weight:700;color:#b36e01">
+        哎呀... 您访问的页面不存在! 但不要着急哦！<br>
+        系统将在&nbsp;<span id="time" style="color:#c00">5</span>&nbsp;秒后自动转入首页！
+    </div>
+	<div style="color:#999;font-family:宋体;line-height:1.8em;padding-top:20px;font-size:12px">
+        ·您可能输入了错误的网址，或者该网页已删除或移动<br>
+        ·您可以点击查看<a href="http://www.s.cn/p.html" style="color:#f60">全部商品</a>或直接<a href="http://www.s.cn" style="color:#f60">返回首页</a>
+    </div>
+</div>
+</div>
+</body>
+</html>

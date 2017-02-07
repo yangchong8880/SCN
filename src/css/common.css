@@ -1,0 +1,613 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, 
+blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img,
+ q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, 
+ caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img { border:0; }
+ul,li { list-style:none;}
+a { text-decoration:none;}
+body { font:12px "宋体";}
+.fl{float:left;}
+.fr{float: right;}
+.clear:after{content: "."; clear: both; display: block; height: 0; overflow: hidden;visibility: hidden;}
+.container{width: 992px; height: 100%; margin: 0 auto;}
+
+/*侧边导航*/
+ #subnavBox{
+ 	background: black; 
+ 	color: white; 
+ 	height:100%;
+ 	width:37px; 
+ 	position: fixed; 
+ 	top: 0; 
+ 	right: 0;
+ 	z-index: 99999;	
+ }
+#subnavBox .hot  a
+        {
+	     background: url(../html/screen-img/rbar_icon.png) no-repeat;
+	     color: white;				     
+	     text-decoration:none;
+	      width: 41px;
+	        height: 35px;
+	        position: absolute;
+           left: 5px;
+           top: 0;			    
+	    }
+	    
+#subnavBox p  a
+        {
+	     background: url(../html/screen-img/rbar_icon.png) no-repeat;
+	     color: white;				     
+	     text-decoration:none;
+	     width: 37px;
+	     height: 35px;
+	     position: absolute;
+         left: 5px;
+         top: 0;	
+	    }	    
+	    
+	#subnavBox p.first{
+		    width: 37px;
+	        height: 151px;
+	        position: relative;
+            top: 0;
+            left: 0; 	
+            background: black;	
+            cursor:pointer;
+            text-align: center;
+            font-size: 16px;		
+	     }    
+	    
+	  #subnavBox p.second{
+		     width: 37px;
+	        height: 151px;
+	        position: relative;
+            top: 0;
+            left: 0; 	
+            background: black;	
+            cursor:pointer;
+            text-align: center;	
+            margin-bottom: 151px;	
+	     }      
+   
+#subnavBox .hot 
+          {
+	        width: 41px;
+	        height: 151px;
+	        position: relative;
+            top: 0;
+            left: -4px; 	
+            background-color: #BD0000;	
+            cursor:pointer;
+            text-align: center;	
+            font-size: 18px;	
+          }	
+#subnavBox .toTop{
+	width: 37px;
+	height: 23px;
+	position: fixed;
+	right: -5px;
+    bottom: 20px;
+   cursor: pointer;
+   background: url(../html/screen-img/rbar_icon.png) no-repeat;
+   background-position:0 -331px;
+   display: none;
+}              
+ /*侧边导航*/
+
+/*顶部*/
+#common-top{width:100%; height: 23px; background: #eeeeee;}
+#common-top .container ul{float: right; }
+#common-top .container ul li{float: left; height: 23px;line-height: 23px; z-index: 9999;}
+#common-top .container .rl-ul{float: left;margin-left: 246px;}
+#common-top .container .rl-ul .rl-li1 a{border: none;}
+.container ul .second i,.container ul .third i{
+    position: absolute;
+    top: 9px;
+    right: 6px;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    border-width: 4px 4px 0;
+    border-style: solid;
+    border-color: #666 #eee #eee;
+    z-index: 7;
+}
+ .container ul li a{padding: 0 18px; border-right: 1px solid #d5d5d5; color: #888888; }
+#common-top .container ul li:hover a{color: orangered;}
+#common-top .container .rl-ul li a{color: orangered;}	
+#common-top .container ul li.second{position: relative;}
+#common-top .container ul li.second div{display: none;cursor: pointer; width: 166px; height: 110px; position: absolute; left:-71px; top:17px; background: white;border: 1px solid #ccc;border-top: none;}
+#common-top .container ul li.second:hover div{display: block;border: 1px solid #ccc;border-top: none;}
+#common-top .container ul li.second:hover{background: white;}
+#common-top .container ul li.second .sub-nav:hover div{display: block; }
+#common-top .container ul li.second .sub-nav ul{margin: 0 15px; width: 50px; height:80px; float: left; }
+#common-top .container ul li.second .sub-nav ul li{width:50px;height:27px;line-height:27px;float: left;  padding-top:5px; border-bottom: 1px dashed lightsteelblue;}
+#common-top .container ul li.second .sub-nav ul li:hover{background-color: #fff6d4;color: red;}
+#common-top .container ul li.third{position: relative;}
+#common-top .container ul li.third img{position: absolute;top: 3px;left: 5px;}
+#common-top .container ul li .third a{padding: 0 15px 0 20px 0;}
+#common-top .container ul li.third div{position: absolute; left: -125px; top:17px; width:220px; display: none; border: 1px solid #ccc;border-top: none;background: white;}
+#common-top .container ul li.third:hover div{display: block; }
+#common-top .container ul li.third:hover{background: white;}
+#common-top .container ul li.third div li{float: left; margin: 0 5px; width: 100px; height: 120px;}
+#common-top .container ul .service{padding: 0 15px 0 15px;}
+.container ul .service {position: relative;}
+.container ul .service img{position:absolute;left: 9px;top: 3px;}
+.container ul .phoneN img{margin-top: 2px;}
+/*顶部*/
+
+/*头部*/
+#common-head{height: 77px; width: 100%; overflow: hidden;}
+#common-head  .logo{margin-top: 16px;  width: 422px; height: 62px; float: left;}
+#common-head  .head-center{width: 340px; height: 61px; margin-top: 17px; float: left; margin-left: 35px;} 
+#common-head  .head-center .search{height: 30px; width: 339px;}
+#common-head  .head-center .search .txt{border:2px solid #d5d5d5;border-right:none;width: 272px; float: left; line-height: 26px; text-indent: 5px; height: 26px; color: #666;}
+#common-head  .head-center .search .but{border:none;width:63px; height: 32px; background: #444444; text-align: center; line-height: 30px; color:white; float: left;cursor: pointer;font-size: 16px;} 
+#common-head  .head-center p{margin-top: 10px;}
+#common-head  .head-center p a{margin: 0 5px; color: #888; }
+#common-head  .head-center p a:hover{color: red;border-bottom: 1px solid red;}
+#common-head  .head-center p span{color: #ccc;} 
+#common-head  .cart a{
+	display:block;
+	width:126px; 
+	height: 34px; 
+	float: right; 
+	text-indent: 46px;
+	line-height: 34px; 
+	background:url(../img/headImg/cart.gif) no-repeat; 
+	margin-top:20px;
+	color: #666;
+	}
+#common-head  .cart a:hover{background-position-y: -34px;}
+#common-head  .cart a span{color: #cc0000;font-weight:bold;padding: 0 3px;}
+/*头部*/
+
+/*导航*/
+#common-list{width: 100%; background: #a21f25; position: relative;}
+#common-list .list{width: 1112px; height: 34px; margin: 0 auto;}
+#common-list .list .list-a{
+	width: 188px; 
+	color: white; 
+	line-height: 34px; 
+	float: left;
+	background: #b9363d;
+	text-indent: 50px;
+	font-weight: bold;
+	font-size: 16px;
+	
+	}
+#common-list .list .list-b{ float: left; }
+#common-list .list .list-b li{float: left; height: 34px; line-height: 34px;background: url(../img/headImg/navBg.gif) right no-repeat;}
+#common-list .list .list-b li a:hover{
+    background: #444;
+    color: #FFF;
+    position: relative;
+    border-left: 1px solid #a21f25;
+    margin-left: -1px;
+}
+#common-list .list .list-b .first{background: #444444;}
+
+
+#common-list .list .list-b li a{display:block;padding: 0 18px;  color: white;}
+#common-list .list .list-b .last {background: none;}
+#common-list .list .list-b .officialAccounts{position: relative;}
+#common-list .list .list-b .officialAccounts span{
+	display: none;    
+	position: absolute;
+    top: 34px;
+    left: 0px;
+    z-index: 9999;
+    }
+#common-list .list .list-b .officialAccounts:hover span{display: block;}
+
+/*导航栏的二级导航*/
+#common-list .list .male-list{
+	width: 668px;
+	height: 302px;
+	position: absolute;
+	top: 34px;
+	left: 326px;
+	background: white;
+	display: none;
+	z-index: 9999
+}
+#common-list .list .male-list li a{background: none;}
+#common-list .list .list-b .second:hover .male-list{display: block;}
+#common-list .list .male-list ul li h4{
+    font-size: 18px;
+    display: block;
+    padding-bottom: 7px;
+    height: 24px;
+    line-height: 24px;
+    color: #2a2a2a;
+}
+#common-list .list .male-list .sportsShoes,
+#common-list .list .male-list .clothing{
+	float: left;
+	width: 162px;
+	height: 271px;
+	padding-left: 22px;
+}
+#common-list .list .male-list .sportsShoes li a,
+#common-list .list .male-list .clothing li a{
+	display: inline-block;
+    position: relative;
+    line-height: 24px;
+    outline: none;
+    color: #555555;
+    vertical-align: bottom;
+    white-space: nowrap;
+}
+#common-list .list .male-list .sportsShoes li a:hover,
+ .list .male-list .clothing li a:hover{color: red;}
+#common-list .list .male-list .brand{
+	float: left;
+	width: 250px;
+	height: 271px;
+	padding-left: 22px;}
+	#common-list .list .male-list .brand h4{
+		 font-size: 18px;
+	    display: block;
+	    padding-bottom: 7px;
+	    height: 24px;
+	    line-height: 24px;
+	    color: #2a2a2a;
+	}
+#common-list .list .male-list .brand li{float: left;margin: 2px;}
+#common-list .list .male-list .brand li:hover img{border: 1px solid #ccc;}
+/*导航栏的二级导航*/
+
+#common-list .list .list-c{float: right; }
+#common-list .list .list-c li{float: left; height: 33px; line-height: 33px;}
+#common-list .list .list-c li a{padding: 0 12px; border-right: 1px solid #d18f92; color: white;}
+#common-list .list .list-c li:hover a{color: #ffcc00;text-decoration: underline;}
+#common-list .list .list-c .active a{color: #ffcc00;}
+/*导航*/
+
+/*商品分类隐藏侧栏*/
+#common-list .list .list-a .menu-nav{
+	background: url(../img/headImg/menu-nav-Img.png) no-repeat 12px -422px;
+	position: absolute; 
+	left: 75px; 
+	top: 34px; 
+	width: 190px; 
+	height: 385px;
+	background-color: #1e1908; 
+	visibility: hidden;
+	z-index: 9999;
+	}
+#common-list .list .list-a:hover .menu-nav{visibility: visible;}
+#common-list .list .list-a .menu-nav ul li{height:43px;  line-height: 43px; position: relative;}
+
+#common-list .list .list-a .menu-nav ul li .kinda{position: absolute; height: 385px; width:300px;  background: white; display: none;overflow: hidden;z-index: 5;}
+#common-list .list .list-a .menu-nav ul li .kinda .part h3{overflow: hidden; border-bottom: 1px solid #000000;
+    position: relative;
+    height: 20px;
+    width: 280px;
+    margin: 25px auto 0;
+}
+#common-list .list .list-a .menu-nav ul li .kinda .part h3 a{    
+	color: #000;
+    font-family: 'Microsoft YaHei';
+    font-size: 14px;
+    height: 21px;
+    margin-top: -15px;
+    }
+.list .list-a .menu-nav ul li .kinda .part p{
+	    width: auto;
+    margin-left: -33px;
+}
+.list .list-a .menu-nav ul li .kinda .part p a{ 
+	color: #888 !important;
+	font-size: 14px;
+    padding: 0 5px;
+    margin-top: 5px;
+}
+#common-list .list .list-a .menu-nav ul li .kinda .part p a:hover{color: red !important;text-decoration: underline;}
+#common-list .list .list-a .menu-nav ul li:hover .kinda{display: block;}
+
+#common-list .list .list-a .menu-nav ul li:hover{    
+	background-position: 10px -48px;
+	background-color: red; 
+	}
+#common-list .list .list-a .menu-nav ul li a{color: white;}
+
+/*导航底部*/
+#nav-bottom{width: 100%;height: 5px;background: url(../img/headImg/navWrapBg.gif) ;}
+/*导航底部*/
+
+
+
+/*conmon-底部*/
+.box10 {
+    height: 10px;
+    clear: both;
+    overflow: hidden;
+}
+.footbrand {
+    width: 990px;
+    background: #fff;
+    overflow: hidden;
+    padding-bottom: 1px;
+    margin: 0 auto;
+    height: 142px;
+}
+.footbrand a span {
+    display: block;
+    height: 100%;
+    
+    transition: background-color 0.3s ease 0s;
+    visibility: hidden;
+    width: 100%;
+    background: #DFDFDF;
+    cursor: pointer;
+}
+.footbrand a:hover span {
+    background: #000;
+    opacity: 0.1;
+    filter: alpha(opacity=10);
+    visibility: visible;
+}
+.footbrand a.nike {
+    background-position: 21px -176px;
+}
+.footbrand a {
+    border: 1px solid #DFDFDF;
+    display: block;
+    float: left;
+    height: 70px;
+    margin: 0 -1px -1px 0;
+    overflow: hidden;
+    position: relative;
+    text-indent: -999px;
+    width: 98px;
+    background: url(http://images.s.cn/images/css/default_brandwall_bg11.png) no-repeat 0 0;
+}
+.footbrand a.adidas {
+    background-position: -106px -176px;
+}
+.footbrand a.syc {
+    background-position: -715px -333px;
+}
+.footbrand a.neo {
+    background-position: -838px -333px;
+}
+.footbrand a.nb {
+    background-position: -590px -176px;
+}
+.footbrand a.converse {
+    background-position: -596px -10px;
+}
+.footbrand a.skq {
+    background-position: -591px -258px;
+}
+.footbrand a.puma {
+    background-position: -835px -176px;
+}
+.footbrand a.reebok {
+    background-position: -719px -10px;
+}
+.footbrand a.asics {
+    background-position: -467px -331px;
+}
+.footbrand a.last {
+    width: 97px;
+}
+.footbrand a.kappa {
+    background-position: -715px -176px;
+}
+.footbrand a.anta {
+    background-position: -347px -176px;
+}
+
+.footbrand a.lining {
+    background-position: -230px -176px;
+}
+.footbrand a.vans {
+    background-position: -105px -256px;
+}
+.footbrand a.troead {
+    background-position: -593px -332px;
+}
+.footbrand a.lantivy {
+    background-position: -346px -100px;
+}
+.footbrand a.dc {
+    background-position: -595px -491px;
+}
+.footbrand a.nike_tx {
+    background-position: -229px -491px;
+}
+.footbrand a.adidas_tx {
+    background-position: -350px -491px;
+}
+.footbrand a.disney {
+    background-position: -104px -490px;
+}
+
+.btmfenlei_hd {
+    height: 36px;
+    width: 990px;
+    margin: 0 auto 28px;
+    clear: both;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.btmfenlei_hd h3 {
+    font-size: 18px;
+    font-family: microsoft yahei;
+    position: absolute;
+    left: 50%;
+    margin: 12px 0 0 -60px;
+    background: #fff;
+    padding: 10px 20px;
+    font-weight: 100;
+}
+.btmfenlei_body {
+    width: 990px;
+    margin: 0 auto 15px;
+    font-family: microsoft yahei;
+    overflow: hidden;
+}
+.btmfenlei_body dl {
+    width: 245px;
+    float: left;
+    padding-right: 2px;
+}
+.btmfenlei_body dt {
+    text-align: center;
+}
+.btmfenlei_body dt img{display: inline-block;}
+.btmfenlei_body dt a {
+    color: #222;
+}
+.btmfenlei_body a:hover {
+    color: #c00;
+    text-decoration: underline;
+}
+.btmfenlei_body dt s {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+}
+.btmfenlei_body dd {
+    border-right: 1px dotted #ccc;
+    height: 85px;
+    overflow: hidden;
+    padding: 0 10px 0 15px;
+}
+.btmfenlei_body dd a {
+    color: #555;
+    display: block;
+    float: left;
+    margin-bottom: 10px;
+    white-space: nowrap;
+    width: 54px;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/*返回首页*/
+.warp {
+    margin: 0 auto;
+    width: 990px;
+    height: 50px;
+}
+.foot {
+    border-top: 2px solid #ce3c3b;
+    background: #f8f8f8;
+}
+.foot .row {
+    padding: 15px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #e8e8e8;/*width: 1319px;height: 195px;*/
+}
+.foot .ewm {
+    height: 195px;
+    width: 220px;
+    border-right: 1px solid #dedede;
+    float: left;
+    position: relative;
+}
+.foot .ftli {
+    border-left: 1px solid #fff;
+    height: 195px;
+    padding-left: 40px;
+    line-height: 1.6em;
+}
+.foot .ftli li {
+    display: block;
+    float: left;margin-left: 40px;
+}
+.foot .ftli li h6 {
+    display: block;
+    height: 36px;
+    margin: 5px 0 25px;
+    color: #111;
+}
+.foot .ftli li h6:hover {opacity: 0.7;}
+.foot .ftli li h5 {
+    display: block;
+    margin: 0 0 6px;
+    font-size: 14px;
+    color: #666;
+    font-family: '宋体';
+    font-weight: bold;
+}
+.c999, .c999 a {
+    color: #999;
+}
+.foot .row02 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.c777, .c777 a {
+    color: #777;
+}
+.foot .row02 span {
+    color: #ccc;
+    font-family: '宋体';
+}
+
+.cf60 a:hover, 
+.cc00 a:hover, 
+.cd60 a:hover, 
+.cd00 a:hover, 
+.cca0 a:hover, 
+.salePrice a:hover,
+.c999 a:hover, 
+.c777 a:hover, 
+.cf00 a:hover, 
+.c36d a:hover, 
+.c666 a:hover {
+    color: #F00;
+    text-decoration: underline;
+}
+
+.foot .row02 s {
+    font-size: 20px;
+    color: #c00;
+    font-weight: 700;
+}
+s {
+    text-decoration: none;
+}
+.foot .row03 {
+    height: 50px;
+    margin: 0 auto 30px;
+        width: 640px;
+}
+.foot .row03 a {
+    float: left;
+    width: 112px;
+    height: 47px;
+    margin-right: 10px;
+    color: #333;
+}
+/*conmon-底部*/
+
+/*最底部友情链接*/
+#broadcast{
+	margin-left: 11%;
+	border-bottom: 1px dashed #CCCCCC;
+    border-top: 1px dashed #CCCCCC;
+    height: 20px;
+    padding: 5px;
+}
+
+#demo ul li{height: 20px;line-height: 20px;}
+#demo ul li a {
+    color: #999999;   
+    padding: 0 5px;
+}
+#demo ul li a:hover{text-decoration: underline;}
+/*最底部友情链接*/

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/common.css">
+		<style type="text/css">
+		    
+			.show-list p{line-height: 43px; color: #735d5f;}
+			.show-list p span{color: #fd000f; font-size: 10px;}
+			.show-list .li{width: 1190px; height: 38px; overflow: hidden;}
+			.show-list-ul{padding-bottom: 15px;}
+			.show-list-ul li{float: left;line-height: 38px; padding: 0 25px; margin-right: 2px; background: #f0f0f0;}
+			.show-list-ul .default{background: #f95850;}
+			.show-list-ul li a{ color: #0c100f;}
+			.show-list-ul .default a{ color: white;}
+			
+			.show-list-change{background: #f0f0f0; margin-bottom: 15px;}
+			.show-list-change li{float: left;line-height: 38px;}
+			.show-list-change li span{}
+			.show-list-change input {position: relative;top:3px; }
+			.list-change-a {padding-right: 9px; padding-left: 199px;}
+			.list-change-b {padding-right: 12px;}
+			.list-change-c { padding-right: 20px; cursor: pointer;}
+			.list-change-d {padding-right: 8px;cursor: pointer;}
+			.list-change-e { padding-right: 16px;cursor: pointer;}
+			.list-change-f {padding-right: 10px;cursor: pointer;}
+			
+			.show-content{ height: 2080px;width:1200px;margin: 0 auto;}
+			.show-content dl{float: left; padding: 0 3px;}
+			.show-content dl dt{}
+			.show-content dl dt img{ width: 230px; height: 315px; cursor: pointer;}
+			.show-content dl dd{width: 232px; padding-top: 5px;}
+			.show-content dl dd p{line-height: 21px; cursor: pointer;}
+			.show-content dl dd p:last-child {}
+			.show-content dl dd span{line-height: 21px; color: red;}
+			
+			.list_num{text-align: center; padding-top: 33px;}
+			.list_num li {display: inline-block; padding: 8px 20px; border: 1px solid #eee; font-size: 14px; color:#999;margin-left: 5px; cursor: pointer;}
+			.list_num li:nth-child(2){border-color: red; color: red;}
+			.list_num .change-color{border-color: red; color: red;}
+		</style>
+		<script type="text/javascript" src="../assets/jquery-3.1.1.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//列表初始化
+		$.get("testfile/goodslist-1.txt",function(_datas){
+			if(_datas){
+				var _datas = typeof _datas == 'string' ? JSON.parse(_datas):_datas;
+				var datas = _datas.data;
+				for(var i = 0;i < datas.length; i++){
+					var data = datas[i];
+		$('.show-content').append('<dl><dt><a href=' + data.url + '><img src="'+ data.img +'" title=""></a></dt><dd><p>'+ data.style +' </p><p>'+ data.title +'</p><span>' + data.price + '</span></dd></dl>')
+				};
+				console.log(data.img);
+			};
+		});
+		
+		$('.list_num').on('mouseenter','li',function(){
+			$(this).addClass('change-color');
+		}).on('mouseleave','li',function(){
+			$(this).removeClass();
+		});
+		//点击翻页
+		$('.list_num').on('click','li',function(){
+			$('.show-content').empty();
+			var index = $(this).index();
+			var li_len = $('.list_num li').length;
+			//导航栏显示当前的页码
+			if(index>=1 && index<= (li_len - 2)){
+
+				$('.list-change-a span').eq(0).html(index);
+				$.get("testfile/goodslist-" + index +".txt",function(_datas){
+					if(_datas){
+						var _datas = typeof _datas == 'string' ? JSON.parse(_datas):_datas;
+						var datas = _datas.data;
+						
+						for(var i = 0;i < datas.length; i++){
+							var data = datas[i];						
+							$('.show-content').append('<dl><dt><a href=' + data.url + '><img src="' + data.img +'" title=""></a></dt><dd><p>'+ data.style +' </p><p>'+ data.title +'</p><span>' + data.price + '</span></dd></dl>')
+						};
+						
+					};
+				});
+			};
+			//最后一页
+			if(index == li_len - 1){
+				$.get("testfile/goodslist-6.txt",function(_datas){
+					if(_datas){
+						var _datas = typeof _datas == 'string' ? JSON.parse(_datas):_datas;
+						var datas = _datas.data;
+						for(var i = 0;i < datas.length; i++){
+						var data = datas[i];
+						$('.show-content').append('<dl><dt><a href=' + data.url + '><img src="' + data.img +'" title=""></a></dt><dd><p>'+ data.style +' </p><p>'+ data.title +'</p><span>' + data.price + '</span></dd></dl>')
+						};
+					};
+				});
+			};
+			//第一页
+			if(index == 0){
+				$.get("testfile/goodslist-1.txt",function(_datas){
+					if(_datas){
+						var _datas = typeof _datas == 'string' ? JSON.parse(_datas):_datas;
+						var datas = _datas.data;
+						for(var i = 0;i < datas.length; i++){
+						var data = datas[i];
+						$('.show-content').append('<dl><dt><a href=' + data.url + '><img src="' + data.img +'" title=""></a></dt><dd><p>'+ data.style +' </p><p>'+ data.title +'</p><span>' + data.price + '</span></dd></dl>')
+						};
+					};
+				});
+			};
+		})
+		
+		$.get("testfile/goodslist.txt",function(_response){
+			if(_response){
+				var response = typeof _response == "string" ? JSON.parse(_response) : _response ;
+				//获取总数量
+				var totle = response.totle;
+				//每一显示的数量
+				var pageCount = response.pagecount;
+				//计算要分多少页展示
+				var pageNum = Math.ceil(totle/pageCount);
+				
+				
+				//添加分页按钮
+				$('<li>首页</li>').appendTo('.list_num');
+				for(var i = 1;i <= pageNum; i++){
+					$('<li>' + i + '</li>').appendTo('.list_num');	
+				};
+				$('<li>尾页</li>').appendTo('.list_num');
+				//获取总找到的数量
+				$('.show-list p span').html(totle);
+				
+				$('.list-change-a span').eq(1).html(pageNum);
+				
+				$('.list-change-b span').html(totle);
+			};
+			//导航栏的下一页按钮
+			var j = 1;
+			$('.list-change-c').click(function(){
+				j++;
+				if(j > pageNum){
+					alert('已到最后一页！');
+					return false;
+				}
+				$('.show-content').empty();
+				$.get("testfile/goodslist-" + j +".txt",function(_datas){
+					if(_datas){
+						var _datas = typeof _datas == 'string' ? JSON.parse(_datas):_datas;
+						var datas = _datas.data;
+						//console.log(datas.length);
+						for(var i = 0;i < datas.length; i++){
+							var data = datas[i];
+							$('.show-content').append('<dl><dt><a href=' + data.url + '><img src="' + data.img +'" title=""></a></dt><dd><p>'+ data.style +' </p><p>'+ data.title +'</p><span>' + data.price + '</span></dd></dl>')
+						};
+					};
+				});
+				$('.list-change-a span').eq(0).html(j);
+			});
+	
+		});
+			})
+		</script>
+	</head>
+	<body>
+		<div class="show-list">
+					<p>为您找到<span></span>个商品</p>
+					<div class="li">
+						<ul class="show-list-ul fl">
+							<li class="default"><a href="#">默认</a></li>
+							<li><a href="#">销量</a></li>
+							<li><a href="#">上架时间</a></li>
+							<li><a href="#">价格</a></li>
+							<li><a href="#">折扣</a></li>
+						</ul>
+						<ul class="show-list-change fr">
+							<li class="list-change-a">
+								<span>1</span>/<span></span>页
+							</li>
+							<li  class="list-change-b">
+								共<span></span>个商品
+							</li>
+							<li class="list-change-c">下一页</li>
+							<li class="list-change-d">
+								<input type="radio" name="checked" id="" value="" />款式
+							</li>
+							<li class="list-change-e">
+								<input type="radio" name="" />系列
+							</li>
+							<li class="list-change-f">
+								<input type="checkbox" name="" id="" value="" />仅显示有货
+							</li>
+						</ul>
+					</div>
+				</div>
+			<div class="show-content clearfix"></div>				
+		</div>
+		</div>
+		<ul class="list_num clearfix"></ul>
+		<div id="official-introduce"></div>
+		<div id="foot-link"></div>
+		<div id="scroll-to-top">
+			<i class="fa fa-arrow-circle-up fa-4x"></i>
+		</div>
+				
+				
+				
+	</body>
+</html>

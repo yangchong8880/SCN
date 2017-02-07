@@ -1,0 +1,457 @@
+.clear:after{content: "."; clear: both; display: block; height: 0; overflow: hidden;visibility: hidden;}
+a{text-decoration: none;}
+
+#common-top .container .user-Name{margin-left: 250px;height: 23px;line-height: 23px;font-weight: bold;}
+#common-top .container .user-Name .logoutA{padding-left: 5px;}
+/*广告*/
+#wrap-main{width: 100%;height: 100%;background: url(../img/indexImg/mainBg.jpg);}
+
+
+#wrap-main .banner{
+	width: 1255px;
+	height: 572px;
+	margin: 0 auto;
+	position: relative;
+}
+/*轮播图*/
+  .shufflingImg {
+		width: 480px;
+		height: 150px;
+		position: absolute;
+		z-index: 99999;
+		left: 31%;
+		top: 70%;
+		border: 3px solid red;border-radius: 30px;
+	}
+	
+	.shufflingImg .pic {
+	    width: 100%;
+		height: 150px;
+		
+		overflow: hidden;
+	}
+	.shufflingImg .pic ul li {
+		width: 100%;
+		height: 150px;
+		position: relative;
+		
+	}
+	
+	.shufflingImg .pic ul li img{
+		width: 480px;
+		height: 150px;
+		border-radius: 30px;				
+	}
+
+	.shufflingImg .shufflingNav {
+		position: absolute;
+		left: 200px;
+		bottom: 10px;
+		z-index: 999999;
+	}
+	.shufflingImg .shufflingNav ul li {
+		width: 15px;
+		height: 15px;
+		border-radius: 50%;
+		float: left;
+		margin-left: 5px;
+		background:#676767;
+		cursor: pointer;
+	}
+	.shufflingImg .shufflingNav ul li.select{
+		background:red;
+	}
+
+/*轮播图*/
+#wrap-main .banner .bannerImg li{position: absolute;transition: all 0.7s;}
+#wrap-main .banner ul .B1{left: 62px;top: 130px;z-index: 2;}
+#wrap-main .banner ul .cloud-s1{left: 118px;top: 73px}
+#wrap-main .banner ul .cloud-s2{left: 0;top: 202px;}
+#wrap-main .banner ul .cloud-b1{right: 45px;top: 206px;}
+#wrap-main .banner ul .cloud-b2{right: 0;top: 75px;}
+#wrap-main .banner ul .circle{left: 390px;top: 18px;z-index: 3;}
+#wrap-main .banner ul .clothing-b{left: 345px;top: 71px;z-index: 2;}
+#wrap-main .banner ul .shoe-b{left: 794px;top: 71px;z-index: 2;}
+#wrap-main .banner ul .man-l1{left: 298px;top: 225px;z-index: 4;}
+#wrap-main .banner ul .man-l2{left: 116px;top: 297px;z-index: 4;}
+#wrap-main .banner ul .man-r1{right: 230px;top: 226px;z-index: 4;}
+#wrap-main .banner ul .man-r2{right: 158px;top: 440px;z-index: 4;}
+#wrap-main .banner ul .woman{left: 188px;top: 139px;z-index: 4;}
+#wrap-main .banner:hover .man-l1{transform: translateX(15px);}
+#wrap-main .banner:hover .man-r1{transform: translateX(-15px);}
+#wrap-main .banner:hover .man-r2{transform: translateX(20px);}
+#wrap-main .banner:hover .woman{transform: translateY(-20px);}
+#wrap-main .banner:hover .clothing-b{transform: translate(-13px,-13px);}
+#wrap-main .banner:hover .shoe-b{transform: translate(13px,-13px);}
+/*广告*/
+
+/*品牌商品列表*/
+#wrap-main .brandlist{
+	margin:0 auto;
+	background: url(../img/indexImg/list-Bg.png) no-repeat;
+	padding: 8px 0 8px 11px;
+    width: 981px;
+    height: 190px;
+    margin-bottom: 20px;
+	}
+#wrap-main .brandlist ul li{
+	float: left;
+	display: block;
+    width: 137px;
+    height: 95px;
+    margin-right: 3px;
+    overflow: hidden;
+	}
+#wrap-main .brandlist ul li a{
+	display:block;
+    width: 137px;
+    height: 95px;
+    position: relative;
+    float: left;
+}
+#wrap-main .brandlist ul li a:hover img{transform: translateY(-95px);}
+/*品牌商品列表*/
+
+/*会场*/
+#wrap-main .venue{
+	margin: 0 auto;
+	width: 994px;
+	height: 584px;
+}
+#wrap-main .venue ul li{
+	float: left;
+	overflow: hidden;
+    width: 313px;
+    height: 282px;
+    margin: 0 0 10px 0;
+}
+#wrap-main .venue ul li:nth-child(2){margin:0 27px;}
+#wrap-main .venue ul li:nth-child(5){margin:0 27px;}
+#wrap-main .venue ul li .venue-li1{
+	float: left;
+    position: relative;
+}
+#wrap-main .venue ul li .venue-li1 a .read-more{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0,0,0,0.7);
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#wrap-main .venue ul li .venue-li1 a:hover .read-more{
+    visibility: visible;
+    opacity: 1;	
+}
+#wrap-main .venue ul li .venue-li1 a .title{
+	text-align: center;
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    bottom: 35px;
+    left: 0;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#wrap-main .venue ul li .venue-li1 a:hover .title{margin-bottom: 25%;}
+#wrap-main .venue ul li .venue-li1 a .title .font_28{font-size: 28px;}
+#wrap-main .venue ul li .venue-li1 a .title .f_14{font-size: 14px;}
+#wrap-main .venue ul li .venue-li1 a .abs{position: absolute;}
+/*会场*/
+
+/*中间导航*/
+#wrap-main .center-nav{
+	background: url(../img/indexImg/center-nav.png) no-repeat;
+    width: 992px;
+    height: 222px;
+    margin: 20px auto;
+}
+#wrap-main .center-nav ul li{
+	padding: 0px 0 0 21px;
+    margin-top: 10px;
+    float: left;
+    border-right: 1px dashed #ccc;
+    margin-left: 25px;
+    position: relative;
+}
+#wrap-main .center-nav ul li .connav{
+    float: left;
+    width: 166px;
+    height: 212px;
+    position: absolute;
+    left: 151px;
+    top: 0;
+}
+#wrap-main .center-nav ul li .connav span,.bag span{
+	display: block;
+    padding-left: 12px;
+    font-family: "微软雅黑";
+    font-size: 21px;
+    color: #000;
+}
+#wrap-main .center-nav ul li  span em{font-style: normal;}
+#wrap-main .center-nav ul li  p{float: left;}
+#wrap-main .center-nav ul li  p a{
+	display: block;
+    width: 63px;
+    height: 25px;
+    margin: 10px;
+    background: url(../img/indexImg/center-nav-himg.png);
+    background-position: 0 -25px;
+    color: #2c2c2c;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+}
+#wrap-main .center-nav ul li  p a:hover{
+	background-position: 0 0;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+#wrap-main .center-nav ul li .bag{	
+	width: 120px;
+	position: absolute;
+    left: 97px;
+    top: 0;	
+	}
+#wrap-main .center-nav ul .centerNav-last{
+	padding-left: 10px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+/*中间导航*/
+
+/*屋子-商品列表*/
+#wrap-main .room-goods{
+	width: 1213px;
+	height: 758px;
+	margin: 0 auto;
+	background: url(https://img.alicdn.com/imgextra/i3/156043745/TB27mhMcSBjpuFjy1XdXXaooVXa-156043745.png) no-repeat;
+    padding-top: 191px;
+    font-family: "微软雅黑";
+    color: #000;
+    position: relative;
+}
+.room-goods .rel{
+	position: absolute;
+}
+.room-goods .CYX{position: absolute;top:236px; left:0;}
+.room-goods .l{margin: 50px 0 0 275px;}
+.room-goods .l ul li{float: left;}
+.room-goods .l ul .list {
+    margin: 8px 5px 10px;
+    display: block;
+}
+.room-goods .l ul.list li {
+    color: #666;
+    display: block;
+    line-height: 25px;
+}
+.room-goods .fl_product_03 li {
+    width: 226px;
+    margin: 10px 15px 15px;
+    background: none;
+    position: relative;
+}
+.room-goods.fl_product li a {
+    color: #272727;
+    
+}
+.room-goods .fl_product li .pad {
+    padding: 5px 10px 15px;
+    font-size: 14px;
+}
+.room-goods .fl_product li .title {
+    border-bottom: 1px dashed #717171;
+    text-align: center;
+    padding: 10px 0;
+    color: #272727;
+}
+.room-goods .fl_product li .title_bg1 {
+    background: none;
+    padding-left: 0px;
+}
+.room-goods ul.list li span {
+    vertical-align: middle;
+}
+.font_13 {
+    font-size: 13px;
+}
+.font_14 {
+    font-size: 14px;
+}
+.room-goods .fl_product li .title_bg {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #e71834;
+}
+.room-goods .fl_product li .fz {
+    font-size: 12px;
+    color: #272727;
+}
+del {
+    color: #666;
+}
+#wrap-main .room-goods .l ul li a .input{
+    background: #aeaeae;
+    width: 86px;
+    padding: 0 2px;
+    text-align: center;
+    height: 23px;
+    line-height: 23px;
+    color: #fff;
+    font-size: 12px;
+    display: block;
+    position: absolute;
+    right: 10px;
+    bottom:12px;
+}
+#wrap-main .room-goods .l ul li:hover .input{
+    background: #e71834;
+    color: #fff;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+}
+/*屋子-商品列表*/
+
+/*跑步鞋商品列表*/
+#wrap-main .runningShoe{margin: 0 auto;width: 992px;height: 282px;position: relative;top:0}
+#wrap-main .runningShoe a {
+    color: #fff;
+}
+.runningShoe .read-more {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0,0,0,0.5);
+    visibility: hidden;
+    opacity: 0;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.runningShoe a:hover .read-more {
+	visibility:visible;
+	opacity: 1;
+}
+.runningShoe a:hover .title-170{bottom: 42%;}
+.runningShoe .title-170 {
+    bottom: 55px;
+    text-align: center;
+    width: 100%;
+}
+.runningShoe .title-170 {
+    bottom: 85px;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+.trans_05_cb {
+    -webkit-transition: 0.5s cubic-bezier(0,0,0.1,1);
+    -moz-transition: 0.5s cubic-bezier(0,0,0.1,1);
+    -o-transition: 0.5s cubic-bezier(0,0,0.1,1);
+    transition: 0.5s cubic-bezier(0,0,0.1,1);
+}
+.abs {
+    position: absolute;
+}
+.runningShoe .title_m {
+    color: #fff;
+    text-shadow: 0 0 20px #000;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+}
+#wrap-main .product_list{width: 990px;margin: 0 auto;}
+.product_list dl {
+    display: inline;
+    width: 237px;
+    height: 282px;
+    margin: 10px 5px;
+    background-color: #fff;
+    float: left;
+    box-sizing: border-box;
+}
+.pro_bg .product_list dt {
+    background-color: #fff;
+}
+.product_list dt a {
+    width: 100%;
+    display: block;
+}
+.product_list4 dt img {
+    height: 210px;
+    width: 210px;
+    margin: 3px 0 0 11px;
+}
+.product_list dd a{
+    color: #333;   
+    cursor: pointer;
+}
+.product_list dd ul {
+    /*width: 233px;*/
+    border: 2px solid #fff;
+    border-top: none;
+    padding: 0 0 4px 0;
+    height: auto;
+    overflow: visible;
+}
+.product_list dd ul li.r2 {
+    height: 36px;
+    line-height: 18px;
+    padding-top: 4px;
+}
+.product_list dd li {
+    height: 22px;
+    line-height: 22px;
+    padding-left: 3px;
+    position: relative;
+}
+.product_list dd li.r1 .price {
+    padding-right: .3rem;
+    font-size: 18px;
+    font-family: Microsoft Yahei;
+    font-weight: 700;
+    color: #f00;
+    font-style: normal;
+}
+.product_list dd li.r1 .del_price {
+    font-family: verdana;
+    color: #888;
+    text-decoration: line-through;
+    font-style: normal;   
+}
+.product_list dd .buy_btn {
+    display: block;
+    width: 65px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    position: absolute;
+    right: 3px;
+    bottom: 2px;
+    font-style: normal;
+}
+.product_list dl:hover{
+	    border: 2px solid #f00;
+}
+/*跑步鞋商品列表*/

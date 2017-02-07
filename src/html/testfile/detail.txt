@@ -1,0 +1,35 @@
+﻿{
+  "success": true,
+  "msg": "请求成功 (200)",
+  "code": 1,
+  "totle":1,
+  "pagecount":1,
+  "data": [
+    {
+      "id": 1,
+      "style":"韩版",
+      "title": "METERSBONWE 【VIP尊享】女式长款羽绒服",
+       "content":" 玩味十足  显瘦百搭",
+      "big_img": "img/detail-1.jpg",
+      "small_img_1":"img/detail-1.jpg",
+      "small_img_2":"img/detail.jpg",
+      "small_img_3":"img/detail-1.jpg",
+      "small_img_4":"img/detail.jpg",
+      "small_img_5":"img/detail-1.jpg",
+      "ad_img_1":"img/detail-a.jpg",
+      "ad_img_2":"img/detail-b.jpg",
+      "show_img_1":"img/detail.jpg",
+      "show_img_2":"img/detail-1.jpg",
+      "change_img":"img/small-1.gif",
+      "code":"123456",
+      "price": "¥333",
+      "oldprice":"¥666",
+      "color":"影黑",
+      "size_1":"160-165",
+      "size_2":"165-170",
+      "size_3":"170-175",
+      "size_4":"175-180",
+      "url": "goodsDetail.html"
+    }
+    ]
+}

@@ -1,0 +1,57 @@
+<html>
+<head>
+ 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title></title><base target="_blank" />
+<meta charset="utf-8" />
+<style>
+	*{margin: 0; padding: 0;}
+	a{color:darkgreen; text-decoration: none;}
+	
+	 .hovertreeContent{width:992px;text-indent:2em; margin:0px auto; height:150px; overflow:hidden;position:relative;border:1px solid silver;}
+	 .hovertreeContent ul li{line-height:30px;  border-bottom: 1px solid #808080; overflow: hidden;} 
+	 .hovertreeContent ul li.first{ background: #f1f1f1;}
+	 .hovertreeContent ul li p{float:left; padding-left:40px;}
+	 .hovertreeContent ul li p a{margin-right: 110px; color: #000000;}
+	 .hovertreeContent ul li span{float:right;   padding-right:110px; }
+	 .hovertreeContent ul li span a{color: #000000;}
+	.hewenqiToggle{height:20px;background-color:#f0f0f0;border-top:1px solid silver;position:absolute;bottom:0px;width:992px;}
+	.triangle-down-hovertree { width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-top: 16px solid #999;position:absolute;right:0px;left:0;margin:0px auto; top:2px;cursor:pointer;}
+	.triangle-up-hovertree { width: 0; height: 0; border-left: 8px solid transparent; border-right: 8px solid transparent; border-bottom: 16px solid #999; position:absolute;right:0px;left:0px;margin:0px auto;top:2px; }
+</style>
+<script  type="text/javascript" src="../assets/jquery-2.1.1.min.js"></script>
+  
+</head>
+<body>
+<div class="hovertreeContent">
+	<ul>
+		<li class="first"><a>正品鞋、服装、包包</a><b>(共有118个商品)</b></li>
+		<li><p>类型：<a href="">鞋子</a><a href="">服装</a><a href="">包包</a><a href="">配件</a></p><span><a href="">+多选</a></span></li>
+		<li><p>类型：<a href="">鞋子</a><a href="">服装</a><a href="">包包</a><a href="">配件</a></p><span><a href="">+多选</a></span></li>
+		<li><p>类型：<a href="">鞋子</a><a href="">服装</a><a href="">包包</a><a href="">配件</a></p><span><a href="">+多选</a></span></li>
+		<li><p>类型：<a href="">鞋子</a><a href="">服装</a><a href="">包包</a><a href="">配件</a></p><span><a href="">+多选</a></span></li>
+		<li><p>类型：<a href="">鞋子</a><a href="">服装</a><a href="">包包</a><a href="">配件</a></p><span><a href="">+多选</a></span></li>
+		<li><p>类型：<a href="">鞋子</a><a href="">服装</a><a href="">包包</a><a href="">配件</a></p><span><a href="">+多选</a></span></li>
+		<li><p>类型：<a href="">鞋子</a><a href="">服装</a><a href="">包包</a><a href="">配件</a></p><span><a href="">+多选</a></span></li>
+		<li><p>类型：<a href="">鞋子</a><a href="">服装</a><a href="">包包</a><a href="">配件</a></p><span><a href="">+多选</a></span></li>
+		<li><p>类型：<a href="">鞋子</a><a href="">服装</a><a href="">包包</a><a href="">配件</a></p><span><a href="">+多选</a></span></li>
+	</ul>
+<div class="hewenqiToggle"><span class="triangle-down-hovertree"></span></div>
+</div>
+<script>
+	$(".hewenqiToggle").on("click", function () {
+		if ($(".hewenqiToggle").css('position') == "absolute") {
+			$(".hovertreeContent").height("auto");
+			$(".hewenqiToggle").css({ "position": "relative" });
+			$(".hewenqiToggle").find("span").removeClass('triangle-down-hovertree').addClass('triangle-up-hovertree');
+		}
+		else
+		{
+			$(".hovertreeContent").height("150");
+			$(".hewenqiToggle").css({ "position": "absolute" });
+			$(".hewenqiToggle").find("span").removeClass('triangle-up-hovertree').addClass('triangle-down-hovertree');
+		}
+	})
+</script>
+</body>
+</html>

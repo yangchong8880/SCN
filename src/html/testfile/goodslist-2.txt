@@ -1,0 +1,244 @@
+﻿{
+  "success": true,
+  "msg": "请求成功 (200)",
+  "code": 200,
+  "totle":110,
+  "pagecount":20,
+  "data": [
+    {
+     
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+     "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+     "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+     "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    
+      {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    
+      {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    
+      {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    
+     {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    },
+    
+     {
+      "id": 25,
+      "style":"VANS范斯 休闲鞋 男 深蓝色",
+      "title": "11",
+       "content":"满400减50 满600减80",
+      "img": "screen-img/19d6765a9eac37f6_210.jpg",
+      "price": "￥299",
+      "url": "details.html"
+    }
+    
+    
+    
+    ]
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<link rel="stylesheet" type="text/css" href="../css/common.css" />
+		<link rel="stylesheet" type="text/css" href="../css/register.css"/>
+
+	</head>
+
+	<body>
+		<script src="../assets/jquery-3.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<!--登录php的jq部分-->
+		<script type="text/javascript">
+		    $(function(){
+		      $('#sub').click(function(){
+		        $.post('login.php',{
+		          usename: $('#user').val(),
+		          password: $('#pass').val()
+		        }, function(response){
+		          var $obj = eval('(' + response + ')');
+		          if($obj.state){
+		          	alert('登录成功！');
+		            window.location.href = 'index.html';
+		          } else {
+		            alert($obj.message);
+		          }
+		        })        
+		      })
+		    })
+	   </script>
+		<!--登录php的jq部分-->
+		
+		<div id="head">
+			<div class="logo"><a href="index.html"><img src="../img/headImg/logo.gif"></a></div>			
+		</div>
+		
+		<div id="center">
+			<div class="center-left">
+				<a href="" title="返回名鞋库首页"></a>
+			</div>
+			<div class="center-right">
+				<h1><img src="../img/loginImg/loginpic21.png"></h1>
+				<div class="form">
+					<form>
+						<p class="first"><label>用户名：</label><input type="text" placeholder="邮箱/手机/用户名" id="user"></p>
+						<p><label>密码：</label><input type="password"  id="pass"></p>
+						<p class="third"><input type="button" value="登录"  id="sub"><a href="register.html">忘记密码？</a></p>
+						<p class="last">还不是名鞋库会员？<a href="register.html">马上注册成会员</a></p>
+					</form>
+				</div>
+				<p>使用合作网站账号登录名鞋库：</p>
+				<a href=""><img src="../img/loginImg/sina_login_btn.png"></a>
+				<a href=""><img src="../img/loginImg/qq_login_btn.png"></a>
+				<a href=""><img src="../img/loginImg/rr_login.png"></a>
+				<a href=""><img src="../img/loginImg/taobao_login_btn.png"></a>
+			</div>
+		</div>
+		<div id="foot">
+			<div class="row02 c777"> 
+				<span>
+					<a rel="nofollow" href="#" target="_blank">关于名鞋库</a>&nbsp;| 
+					<a href="#" target="_blank">名鞋库资讯</a>&nbsp;| 
+					<a rel="nofollow" href="#">联系名鞋库</a>&nbsp;| 
+					<a rel="nofollow" href="#" target="_blank">人才招聘</a>&nbsp;| 
+					<a rel="nofollow" href="#" target="_blank">免责条款 </a>&nbsp;| 
+					<a rel="nofollow" href="#" target="_blank">法律声明</a>&nbsp;| 
+					<a rel="nofollow" href="#" target="_blank">意见反馈</a>&nbsp;| 
+					<a href="#" target="_blank">全部分类</a>&nbsp;| 
+					<a href="#" target="_blank">友情链接</a>&nbsp;| 
+					<a href="#" target="_blank">鞋码对照表</a>&nbsp;| 
+					<a href="#" target="_blank">问答</a>
+					<a href="#" target="_blank">咨询</a>
+					<a href="#" target="_blank">标签</a>
+					<a href="#" target="_blank">主题</a>&nbsp;| 
+					<a href="#" target="_blank">鞋子品牌大全</a>&nbsp;| 
+					<a href="#" target="_blank">商品大全</a></span> 
+					<div class="cl"></div>
+					Copyright&nbsp;©&nbsp;2008-2014 <s>s.cn</s> 
+					<a href="#" target="_blank">名鞋库</a> All Rights Reserved.&nbsp;&nbsp;&nbsp; 
+					<a rel="nofollow" href="#" target="_blank">闽ICP备08106896号</a>&nbsp;&nbsp;&nbsp;&nbsp;经营许可证闽B2-20110061&nbsp;&nbsp;&nbsp; 
+					<a rel="nofollow" href="#" target="_blank"><img src="http://images.s.cn/images/css/20160617.png">闽公网安备 35020602000166号</a> 
+			</div>
+		</div>
+	</body>
+</html>

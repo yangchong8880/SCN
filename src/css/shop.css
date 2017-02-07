@@ -1,0 +1,47 @@
+
+/*<!--购物车头start-->*/
+#shop-head {width:100%; height:24px; background: #ECECEC; line-height: 28px; }
+#shop-head .head{width: 1190px; height: 100%; margin: 0 auto; overflow: hidden;}
+#shop-head .head span{float: left;}
+#shop-head .head p{float: right;}
+#shop-head .head p a{padding: 0 9px; border-right: 1px solid #53585F;}
+/*<!--购物车头end-->*/
+
+/*<!--标志start-->*/
+#shop-logo{width: 100%; height: 90px; }
+#shop-logo .logo{width: 980px; height: 100%; margin: 0 auto 0 40px; overflow: hidden;}
+#shop-logo .logo p{float: left; width: 250px; height: 65px; }
+#shop-logo .logo span{float: right; }
+#shop-logo .logo span .icon{width: 400px; height: 32px; float: left; margin-head: 23px; background:url(../img/shopCarImg/head.png) no-repeat 0 -62px; margin-top: 23px;}
+#shop-logo .logo span .icon a{float: left; width: 105px; height: 32px; margin-right: 28px; }
+#shop-logo .logo span .server{width: 202px; height:60px; float: left; background:url(../img/shopCarImg/head.png) no-repeat ;}
+#shop-logo .logo span .server .panel{height: 32px; margin: 25px 6px 0 10px; background: #fff; line-height: 32px;}
+#shop-logo .logo span .server .panel a{float: left;}
+#shop-logo .logo span .server .panel b{float: right;}
+/*<!--标志end-->*/
+
+/*图标*/
+#shop-pi{width: 100%; height: 33px;}
+#shop-pi .pi{width: 980px; height: 33px; margin: 0 auto; background:url(../img/shopCarImg/cartnav-step01.jpg) no-repeat ;}
+/*图标*/
+
+/*<!--购物车start--: ;*/
+#shop-car{width:100% ;}
+#shop-car .car{width: 1038px; margin: 0 auto;}
+#shop-car .car h3{height: 30px; line-height: 30px; text-indent: 30px;}
+#shop-car .car .tab{width:960px; margin: 0 auto; text-align: center;}
+#shop-car .car .tab table {width:960px; height: 115px;}
+
+#shop-car .car .total{width: 920px; height: 40px;  padding: 20px 0; margin: 0 auto; border-bottom: 1px solid #7B7B7B; }
+#shop-car .car .total p{text-align:right; line-height: 18px;}
+
+#shop-car .car .pay{width: 920px; height: 40px; padding: 20px 0; margin: 0 auto;}
+#shop-car .car .pay span{float: left; }
+#shop-car .car .pay p{float: right; }
+#shop-car .car .pay p a.first{float: left; margin-right: 15px; padding-top: 20px;}
+#shop-car .car .pay p a.second{ float: left; width: 171px; height: 37px;  text-align: center; line-height: 37px; background:#CC3300 ;}
+
+#common-prove {width: 100%; height: 50px; margin-bottom: 30px; }
+#common-prove .prove{width: 248px; height: 100%; margin: 0 auto;}
+#common-prove .prove  img{margin-right: 10px; width: 112px; height: 47px; float: left; border: 1px solid #BFBFBF;}
+#common-prove .prove  img:hover{border:1px solid #4C4C4C;}

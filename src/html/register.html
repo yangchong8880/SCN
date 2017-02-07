@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css"  href="../css/register.css" />
+		<link rel="stylesheet" type="text/css"  href="../css/common.css" >
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap/css/bootstrap.min.css"/>
+		<style type="text/css">
+			.jconfirm-box-container{position: absolute;top: 0;left: 0;}
+			.jconfirm-box{background: white;width: 300px;height: 100px;}
+			.btn-default{margin-left: 42%;}
+			.buttons{background: white;}
+		</style>
+	</head>
+	<script type="text/javascript" src="../assets/jquery-3.1.1.js"></script>
+	<script src="../assets/jquery-confirm/jquery-confirm.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="../js/jquery.validate.js"></script>
+	<script type="text/javascript" src="../js/register.js"></script>
+	<script type="text/javascript" src="../js/mycookie.js" ></script>
+	<script type="text/javascript">
+		var onload = function(){
+				
+				//获取的节点
+				var oform=document.getElementsByTagName('form')[0];
+				var boxNode=document.getElementById('box');
+				var useName = document.getElementById('usename');
+				var pwt=document.getElementById('pwd');
+				var pwt2=document.getElementById('pwd2');
+				var textNum=document.getElementById('testnum');
+				var check=document.getElementById('check');
+				var btn=document.getElementById('btn');							
+				var oEm=document.getElementsByTagName('em');
+				
+				//调用getCookie函数，来获取用户提交的内容，将它赋给原来的节点的值，下次打开网页就会看到上次用户提交的内容
+				useName.value=getCookie("usename:");
+				pwt.value=getCookie('password:');
+				
+				
+				var a=0;
+				useName.onkeyup=function(){   //键盘每按下一个键就会进行判断
+					var use=useName.value;
+					var reg1=/^1[0-9]{10}/;//验证手机号
+					var reg2=/[a-zA-Z0-9]{1,10}@[a-zA-Z0-9]{1,5}\.[a-zA-Z0-9]{1,5}/;//验证邮箱
+					if(reg1.test(use) || reg2.test(use)){  
+						
+						oEm[0].style.background='green';
+						oEm[0].innerHTML = "用户名合法";
+						a=1;			//只有满足的时候才会使它变为1，其他情况都为0
+					}
+					else{
+						
+						oEm[0].innerHTML = "用户名不合法";
+						oEm[0].style.background='red';
+						a=0;       //(注意)当键盘每按下一个键就会进行判断时就行判断，如果不对就一直使它为假
+					}
+					
+				}
+				
+				var b=0;
+				pwt.onkeyup=function(){
+						var pwtCheck=pwt.value;
+					if(/^\d{4,12}$/.test(pwtCheck) ){
+						
+						oEm[1].style.background='green';
+						oEm[1].innerHTML = "密码合法";
+						b=1;
+					}
+					else{
+						
+						oEm[1].innerHTML = "密码不合法";
+						oEm[1].style.background='red';
+						b=0;     //（注意）当键盘每按下一个键就会进行判断时就行判断，如果不对就一直使它为假
+					}
+				}
+				
+				var c=0;
+				pwt2.onkeyup=function(){
+					var pwtCheck2=pwt2.value;
+					if(pwtCheck2 == pwt.value){
+						
+						oEm[2].style.background='green';
+						oEm[2].innerHTML = "两次密码输入一致";
+						c=1;
+					}
+					else{
+						
+						oEm[2].innerHTML = "两次密码不一致";
+						oEm[2].style.background='red';
+						c=0;
+					}
+				}
+				
+	
+					btn.onclick = function() {
+					
+						if(a && b && c) {					//a==b==c==d==1这个写法是错误的,不管之前的值是0或者1 ，结果都为true
+							
+							if(check.checked) {
+								var da = new Date();
+								da.setDate(da.getDate() + 3);
+								addCookie("usename:", useName.value, 3);
+								addCookie("password:", pwt.value, 3);
+							}
+														
+						} else {
+							
+							alert("注册失败");
+							//history.go(0);   
+							location.reload();   //当注册失败时用history.go(0)和location.reload()都是用来刷新页面
+							document.reload();									
+						}
+												
+					}		
+					
+		}
+	
+	</script>
+	<body>
+		<!--php的jq部分-->
+		<script type="text/javascript">
+			$(function(){
+				$('#btn').click(function(){
+					$.post('register.php',{
+						usename: $('#usename').val(),
+						password: $('#pwd').val(),
+						conpassword: $('#pwd2').val()
+					}, function(response){
+						var $obj = eval('(' + response + ')');
+						if($obj.state){
+							alert('注册成功！');
+							window.location.href = 'login.html';
+						} else {
+							$.alert($obj.message);
+						}
+					})				
+				})
+			})
+		</script>
+		<!--php的jq部分-->
+		
+		<div id="head">
+			<div class="logo"><a href="index.html"><img src="../img/headImg/logo.gif"></a></div>
+			<span><a href="index.html">返回首页</a></span>
+		</div>
+		
+		
+		<div class="center">
+			<div class="center-a">名鞋库用户注册</div>
+			<div class="center-b">
+				<form>
+				<img src="../img/registerImg/bianjie.png" class="img-a"> 
+				<img src="../img/registerImg/singupmy.png" class="img-b"> 
+				<img src="../img/registerImg/signup.jpg" class="img-c">
+				<div class="center-d">
+				    <div id="box">
+		
+						<form>
+		
+							<p>用户名
+								<em></em><input type="text" id="usename" placeholder="邮箱/手机" />
+							</p>
+		
+							<p>登录密码
+								<em></em><input type="password" id="pwd" placeholder="请输入密码" />
+							</p>
+		
+							<p>确认密码
+								<em></em><input type="password" id="pwd2" placeholder="确认密码" />
+							</p>
+		
+							<p>
+								<input type="checkbox" id="check">自动保持3天用户名>
+							</p>
+		
+							<p>
+								<input type="button" id="btn" value="注册" />
+							</p>
+		
+						</form>
+
+			</div>
+				</div>				
+				<div class="center-c">
+					<h3>已有名鞋库账号？</h3>
+					<a href="login.html">现在登录</a>			
+				</div>
+				</form>
+			</div>
+			
+		</div>
+		<div id="foot">
+			<div class="row02 c777"> 
+				<span>
+					<a rel="nofollow" href="#" target="_blank">关于名鞋库</a>&nbsp;| 
+					<a href="#" target="_blank">名鞋库资讯</a>&nbsp;| 
+					<a rel="nofollow" href="#">联系名鞋库</a>&nbsp;| 
+					<a rel="nofollow" href="#" target="_blank">人才招聘</a>&nbsp;| 
+					<a rel="nofollow" href="#" target="_blank">免责条款 </a>&nbsp;| 
+					<a rel="nofollow" href="#" target="_blank">法律声明</a>&nbsp;| 
+					<a rel="nofollow" href="#" target="_blank">意见反馈</a>&nbsp;| 
+					<a href="#" target="_blank">全部分类</a>&nbsp;| 
+					<a href="#" target="_blank">友情链接</a>&nbsp;| 
+					<a href="#" target="_blank">鞋码对照表</a>&nbsp;| 
+					<a href="#" target="_blank">问答</a>
+					<a href="#" target="_blank">咨询</a>
+					<a href="#" target="_blank">标签</a>
+					<a href="#" target="_blank">主题</a>&nbsp;| 
+					<a href="#" target="_blank">鞋子品牌大全</a>&nbsp;| 
+					<a href="#" target="_blank">商品大全</a></span> 
+					<div class="cl"></div>
+					Copyright&nbsp;©&nbsp;2008-2014 <s>s.cn</s> 
+					<a href="#" target="_blank">名鞋库</a> All Rights Reserved.&nbsp;&nbsp;&nbsp; 
+					<a rel="nofollow" href="#" target="_blank">闽ICP备08106896号</a>&nbsp;&nbsp;&nbsp;&nbsp;经营许可证闽B2-20110061&nbsp;&nbsp;&nbsp; 
+					<a rel="nofollow" href="#" target="_blank"><img src="http://images.s.cn/images/css/20160617.png">闽公网安备 35020602000166号</a> 
+			</div>
+		</div>
+	</body>
+</html>

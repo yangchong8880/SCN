@@ -1,0 +1,23 @@
+.all-buy-car-messages{}
+	.all-buy-car-messages ul{ padding: 20px 0 20px 11px; border-bottom: 1px solid #d0ccc9; overflow: hidden; border-top: 1px solid #d0ccc9;}
+	.all-buy-car-messages ul li {float: left;}
+	.all-buy-car-messages ul li:first-child{}
+	.all-buy-car-messages ul li:nth-child(2){ border: 1px solid #999;}
+	.all-buy-car-messages ul li:nth-child(2) img { width: 78px; height: 78px;}
+	.all-buy-car-messages ul li:nth-child(3){padding-left: 10px; width: 256px; line-height: 20px;}
+	.all-buy-car-messages ul li:nth-child(3) p:last-child{color: #f54c61;}
+	.all-buy-car-messages ul li:nth-child(4){width: 206px; line-height: 18px;}
+	.all-buy-car-messages ul li:nth-child(5){width: 171px; line-height: 20px; }
+	.all-buy-car-messages ul li:nth-child(5) p:nth-child(3){width: 78px; height: 23px; line-height: 23px; border: 1px solid #cdcdcd; text-align: center;position: relative;}
+	/*优惠信息*/
+	.change-favourable{ position: absolute; width: 178px;border: 1px solid #999; background: white; display: none;}
+	.change-favourable input,.change-favourable label{float: left;}
+.all-buy-car-messages ul li:nth-child(6){width: 90px;}
+	.all-buy-car-messages ul li:nth-child(6) span{float: left; width: 16px; height: 25px; line-height: 23px; text-align: center; border: 1px solid #d0d0d0; cursor: pointer;}
+	.all-buy-car-messages ul li:nth-child(6) span:first-child{ border-right: none;}
+	.all-buy-car-messages ul li:nth-child(6) span:last-child{ border-left: none;}
+	.all-buy-car-messages ul li:nth-child(6) input{float: left;width: 50px; height: 23px;text-align: center; border: 0; border: 1px solid #acacac;}
+	.all-buy-car-messages ul li:nth-child(7){ padding: 0 89px 0 123px; padding-top: 15px;}
+	.all-buy-car-messages ul li:last-child{}
+	.all-buy-car-messages ul li:last-child span{display: block; text-align: right; line-height: 20px;}
+	.all-buy-car-messages ul li:last-child span:hover{text-decoration: underline; color: #999; cursor: pointer;}

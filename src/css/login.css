@@ -1,0 +1,19 @@
+
+#head .warp{width: 990px; margin: 0 auto;}
+
+#center{width: 990px; height: 400px;  margin: 0 auto;}
+#center .center-left{width: 500px; height: 100%; float: left; background:url(../img/loginImg/2016dl.jpg) no-repeat left center;}
+#center .center-right{width: 384px; height: 400px; float: left; }
+#center .center-right h1{height: 28px; width: 100%;}
+#center .center-right h1 img{height: 28px; width: 114px; float: left;}
+#center .center-right .form{width: 384px; height: 280px; background:#fafafa;}
+#center .center-right .form p{padding-top:20px; padding-left: 43px; width: 287px; height: 29px; float: left;}
+#center .center-right .form p.first{padding-top: 20px; }
+#center .center-right .form p label{height: 100%; width: 56px; float: left; line-height: 29px; text-align: center;}
+#center .center-right .form p input{height: 100%; width: 220px; float: left;}
+#center .center-right .form p.third{ padding-left: 101px;  height: 38px; }
+#center .center-right .form p.third input{width: 88px; height: 38px; float: left; background: #da4200; text-align: center; color: white; line-height: 38px; font-weight: bold; border-radius: 6px;}
+#center .center-right .form p.third a{display: block; float: left; padding-top:25px; padding-left: 5px; color: #888;}
+#center .center-right .form p.last{ padding-left: 101px;  height: 12px; }
+#center .center-right .form p.last a{text-decoration:underline ;color: orangered;}
+
