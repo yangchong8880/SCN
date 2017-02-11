@@ -40,13 +40,9 @@
 		};
 		
 		
-		
-		$('.remove-data').click(function(){
-			
+		//删除商品
+		$('.remove-data').click(function(){			
 			$(this).parent().parent().remove();
-			$('.account-price').html('¥' + _goodsAccount());//总价
-			$('.total-price').html('¥' + _goodsAccount());//已满价
-			$('.already-put').html(_goodsTotal());//所有商品已选择的总件数
 			removeCookie('goodsName');
 			removeCookie('goodsAccount');
 			removeCookie('goodsPrice');
@@ -56,7 +52,6 @@
 			removeCookie('goodsCost');
 			removeCookie('goodsPicture');
 		});
-		
 		
 		
 		$('.minusBtn').click(function(){

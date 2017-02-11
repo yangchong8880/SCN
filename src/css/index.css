@@ -379,15 +379,15 @@ del {
     line-height: 26px;
     text-align: center;
 }
-#wrap-main .product_list{width: 990px;margin: 0 auto;}
+#wrap-main .product_list{width: 1004px;margin: 0 auto;}
 .product_list dl {
     display: inline;
-    width: 237px;
-    height: 282px;
+    width: 235px;
+    height: 281px;
     margin: 10px 5px;
     background-color: #fff;
     float: left;
-    box-sizing: border-box;
+    border: 2px solid white;
 }
 .pro_bg .product_list dt {
     background-color: #fff;
@@ -452,6 +452,6 @@ del {
     font-style: normal;
 }
 .product_list dl:hover{
-	    border: 2px solid #f00;
+	    border-color:red;
 }
 /*跑步鞋商品列表*/

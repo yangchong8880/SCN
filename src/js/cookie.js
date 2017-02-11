@@ -49,7 +49,6 @@ function removeCookie(name) {
     var d = new Date();
     d.setDate(d.getDate()-7);;//设置时间 
     document.cookie = decodeURIComponent(name) + "=; expires=" + d;
-    //console.log(name + "=; expires=" + d);
     return document.cookie;
 }
 
