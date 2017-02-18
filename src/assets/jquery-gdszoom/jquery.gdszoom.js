@@ -69,7 +69,7 @@
                 // 鼠标移动效果
                 .on('mousemove',function(e){
                     var _left = e.clientX - $lens.outerWidth()/2 - $self.offset().left;
-                    var _top = e.clientY - $lens.outerHeight()/2 - $self.offset().top;
+                    var _top = e.clientY - $lens.outerHeight()/2 - $self.offset().top + $(document).scrollTop();
 
                     // 防止移出边界
                     if(_left <= 0){
